@@ -1,0 +1,23 @@
+<template>
+  <div class="content-block-title">Add Todo</div>
+  <div class="list-block">
+    <ul>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">Title</div>
+            <div class="item-input">
+                <input type="text" name="title" value.bind="todo">
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <p class="buttons-row">
+      <a href="#/todos" class="button button-round">Cancel</a>
+      <a href="#" click.trigger="addTodo()" class="button button-round active">Add</a>
+    </p>
+  </div>
+</template>
